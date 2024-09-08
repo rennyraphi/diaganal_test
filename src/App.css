@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+/* src/App.css */
+body {
+  background-color: #171717;
+  font-family: 'Titillium Web', sans-serif;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.app {
+  padding: 10px;
+  padding-top: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  /* margin-bottom: 20px; */
+  background-color: #333;
   color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  height: 30px;
+}
+.header{
+  position: sticky;
+  top: 0;
+  background-color: #171717;
 }
 
-.App-link {
-  color: #61dafb;
+.notSearch {
+  position: sticky;
+  top: 0;
+  background-color: #171717;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.back-button {
+  width: 16px;
+  cursor: pointer;
+  margin-left: -5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-title {
+  flex-grow: 1;
+  text-align: left;
+  font-size: 16px;
+  margin-left: 16px;
+}
+
+.search-icon {
+  width: 16px;
+  cursor: pointer;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #171717;
+  padding: 10px;
+  position: sticky;
+  z-index: 100;
+}
+.backSearch{
+  margin-top: 15px;
+  position: sticky;
+  z-index: 100;
+  background-color: #171717;
+}
+.search-bar input {
+  flex-grow: 1;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search-bar  {
+  width: 24px;
+  /* margin-left: 10px; */
+  cursor: pointer;
+  width: 100%;
+  z-index: 100;
+}
+
+.loading {
+  height: 40px;
+}
+.search-back{
+  display: flex;
+  flex-direction: row;
+}
+.navbar{
+  width: 100%;
+}
+.navbar-shadow {
+  margin-top: 10px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  object-fit: cover; /* Maintain the aspect ratio of the shadow */
 }

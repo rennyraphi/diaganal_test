@@ -1,0 +1,21 @@
+/* src/components/MovieGrid.css */
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .poster img {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    background-color: #222;
+  }
+  
+  .poster p {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 14px;
+    color: white;
+  }
+ 
